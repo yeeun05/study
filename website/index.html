@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <title>웹 사이트</title>
 </head>
+
 <body>
     <!-- 스킵 내비게이션 -->
     <div id="skip">
@@ -32,8 +34,19 @@
                         <h1>Professional publisher &amp; Desinger</h1><br>
                         <a href="https://github.com/">github.com</a>
                     </div>
-                    <!-- 헤더 타이틀 -->
-                    <div class="header-icon"></div>
+                    <!-- 헤더 타이틀
+                    1.  img 태그로 표현(의미가 있을 때) /alt 태그 -대체 문자 표현
+                    2. background 속성으로 표현(의미가 없을 때)/대체 문자 x
+                    3. 이미지 backgrund 속성 / 가상으로 대체를 문자로 만들어줌(IR효과)
+                    이미지 스프라이트 효과
+                    -->
+                    <div class="header-icon">
+                        <a href="#" class="icon1"><span class="ir_pm">icon1</span></a>
+                        <a href="#" class="icon2"><span class="ir_pm">icon2</span></a>
+                        <a href="#" class="icon3"><span class="ir_pm">icon3</span></a>
+                        <a href="#" class="icon4"><span class="ir_pm">icon4</span></a>
+                    </div>
+                <!-- 헤더 아이콘 -->
                 </div>
             </div>
         </div>
@@ -41,13 +54,36 @@
 
         <div id="contents">
             <div id="cont_nav">
-                <div class="container">cont_nav</div>
+                <div class="container">
+                    <h2 class="ir_su">전체 메뉴</h2>
+                    <div class="nav">
+                        <div>
+                            <h3>HTML Reference</h3>
+                            <ol>
+                                <li><a href="#">html 태그</a></li>
+                                <li><a href="#">블록요소/인라인요소</a></li>
+                                <li><a href="#">DTD 선언</a></li>
+                                <li><a href="#">언어 송석 설정</a></li>
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">특수문자</a></li>
+                                <li><a href="#">하이퍼링크</a></li>
+                                <li><a href="#">HTML &lt;</a></li>
+                                <li><a href="#">HTML &lt;</a></li>
+                                <li><a href="#">HTML &lt;</a></li>
+                                <li><a href="#">HTML &lt;</a></li>
+                                <li><a href="#">HTML &lt;</a></li>
+                                <li><a href="#">HTML &lt;</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- cont_nav -->
 
             <div id="cont_tit">
                 <div class="container">cont_tit</div>
-            </div>  
+            </div>
             <!-- cont_tit -->
 
             <div id="cont_ban">
@@ -69,4 +105,5 @@
     </div>
     <!-- wrap -->
 </body>
+
 </html>
